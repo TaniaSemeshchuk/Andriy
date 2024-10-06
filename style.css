@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #B3E5FC; /* Light sky blue */
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: none;
+}
+
+.question {
+    font-size: 6em;
+    color: #0D47A1; /* Deep blue color */
+    margin: 20px 0; /* Add some space around the question */
+}
+
+.question-count {
+    font-size: 1.5em;
+    color: #0D47A1;
+    margin-bottom: 20px;
+}
+
+.ans-row {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.answer {
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin: .5em;
+    cursor: pointer;
+    background-color: #E1F5FE;
+    font-size: 1.5em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.answer:hover {
+    background: #81D4FA;
+    transform: scale(1.05);
+}
+
+.start-btn {
+    font-size: 30px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #E1F5FE;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.start-btn:hover {
+    background: #81D4FA;
+    transform: scale(1.05);
+}
+
+.next-btn {
+    font-size: 20px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #FFAB40;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    display: none;
+}
+
+.next-btn:hover {
+    background: #FF9100;
+    transform: scale(1.05);
+}
+
+.container_h3 {
+    margin-bottom: 10px;
+}
+
+.feedback {
+    font-size: 1.5em;
+    color: #0D47A1;
+}
+
+/* Difficulty Buttons */
+.difficulty {
+    margin-bottom: 20px;
+}
+
+.level-btn {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #FFAB40;
+    color: white;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.level-btn:hover {
+    background: #FF9100;
+    transform: scale(1.05);
+}
+
+/* Avatar Selection */
+.avatar-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .question {
+        font-size: 4em;
+    }
+    .answer {
+        width: 60px;
+        height: 60px;
+        font-size: 1.2em;
+    }
+    .start-btn, .next-btn {
+        font-size: 16px;
+    }
+}
